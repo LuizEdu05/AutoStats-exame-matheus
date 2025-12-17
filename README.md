@@ -16,4 +16,56 @@ O **AutoStats** é um aplicativo mobile que auxilia proprietários de veículos 
 
 ## 🏗️ Arquitetura Adotada
 
-O projeto segue uma arquitetura **simplificada em camadas**, focando na separação de responsabilidades:
+O projeto segue uma arquitetura **simplificada em camadas**, focando na separação de responsabilidades
+
+Passo a Passo para Execução
+Pré-requisitos:
+Flutter SDK 3.0 ou superior
+
+Dispositivo físico ou emulador configurado
+
+Conexão com internet (para consulta FIPE)
+
+Passos:
+Clone o repositório:
+
+bash
+git clone https://github.com/seu-usuario/autostats.git
+cd autostats
+Instale as dependências:
+
+bash
+flutter pub get
+Execute o aplicativo:
+
+bash
+flutter run
+Para build de release:
+
+bash
+flutter build apk --release
+
+Testando Funcionalidades:
+Cadastre um veículo:
+
+Na tela inicial, clique em "Cadastrar Veículo"
+
+Informe modelo, ano e quilometragem
+
+Clique em "Salvar"
+
+Adicione despesas:
+
+Na tela inicial, clique em "Adicionar Despesa"
+
+Selecione tipo, informe descrição e valor
+
+Clique em "Salvar Despesa"
+
+Consulte valor FIPE:
+
+Com um veículo cadastrado, clique em "Consultar FIPE"
+
+Aguarde a consulta à API
+
+Veja o valor estimado na tela
